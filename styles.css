@@ -102,6 +102,33 @@ section {
     justify-content: center;
     position: relative;
 }
+.image-container img {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+.cvButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.1);
+}
+.cvButton:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+    background-color: aquamarine;
+}
 .socials {
     position: fixed;
     font-size: 20px;
