@@ -96,14 +96,13 @@ section {
 }
 .image-container {
     display: flex;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 .image-container img {
-    display: flex;
     width: 50%;
     height: 100%;
     align-items: center;
@@ -229,6 +228,70 @@ input {
     width: 50px;
 }
 
+#projects {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.project-header h2 {
+    font-size: 2.5rem;
+    color: blueviolet;
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    width: 30%;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.footer-socials {
+    display: none;
+}
+
+.footer-socials a {
+    color: gray;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: tomato;
+}
+
 @media screen and (max-width: 900px) {
     body {
         overflow: auto;
@@ -243,13 +306,13 @@ input {
         padding: 0.5vw 0.7vw;
         cursor: pointer;
         background: black;
-        z-index: 1000;
+        z-index: 1001;
     }
     .navItems {
         position: fixed;
         top: 0;
-        right: -40vw;
-        width: 40vw;
+        right: -100%;
+        width: 60vw;
         height: 100%;
         background: white;
         padding-top: 15vw;
@@ -257,6 +320,7 @@ input {
         display: flex;
         flex-direction: column;
         transition: 0.3s ease;
+        z-index: 1000;
     }
     .navItems li a {
         font-size: 4vw;
@@ -265,26 +329,68 @@ input {
     #check:checked ~ section  .nav-bar .navItems{
         right: 0;
     }
+    
     .container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     .text-container {
-        width: 100%;
-        padding: 15vw 10vw;
-        z-index: 100;
+        width: 90%; /* Adjust width for mobile */
+        padding: 5vw;  /* Add some padding around text */
+        text-align: center; /* Center-align text for mobile */
     }
     .text-container h2 {
-        font-size: 15vw;
-        line-height: 18vw;
+        font-size: 8vw; /* Responsive font size */
+    }
+    .text-container h5 {
+        font-size: 5vw; /* Adjust for mobile readability */
     }
     .text-container p {
-        font-size: medium;
+        font-size: 4vw; /* Adjust for mobile readability */
+        margin-top: 1rem;
     }
     .image-container {
-        width: 100%;
-        height: 50rem;
-        margin-top: -100px;
-       overflow: hidden; 
+        width: 90%; /* Adjust width for mobile */
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem; /* Space between image and text */
+    }
+
+    .image-container img{
+        width: 100%; /* Full width of container */
+        max-width: 400px; /* Optional max width for mobile */
+        height: auto;
+    }
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    /* Move socials to footer for mobile */
+    .socials {
+        display: none; /* Hide sidebar socials on mobile */
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+        background-color: lightcyan;
+        font-size: 6vw; /* Larger font size for better visibility */
+    }
+
+    .footer-socials a {
+        color: gray;
+        text-decoration: none;
+    }
+
+    .footer-socials a:hover {
+        color: tomato;
     }
     
 }
