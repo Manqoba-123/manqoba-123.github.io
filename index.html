@@ -12,17 +12,17 @@
 
 <body>
     <input type="checkbox" id="check">
-    <section>
-        <div class="nav-bar">
-            <div id="logo">M.M</div>
-            <ul class="navItems">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-            </ul>
-            <label for="check" class="fa fa-bars"></label>
-        </div>
+    <div class="nav-bar">
+        <div id="logo">M.M</div>
+        <ul class="navItems">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </div>
 
+    <!-- Home Section -->
+    <section id="home">
         <div class="container">
             <div class="text-container">
                 <h2>Web Developer</h2>
@@ -30,19 +30,16 @@
                 <p>Computer Science graduate majoring in Computer Science and Applied Mathematics. Enthusiastic about
                     Software Development. A team player with a can-do attitude, curious by nature, and enjoys learning
                     new things.</p>
-                    <a class="cvButton" href="documents/Manqoba(Aziwe).pdf" target="_blank">My Resume</a>
+                <a class="cvButton" href="documents/Manqoba(Aziwe).pdf" target="_blank">My Resume</a>
             </div>
             <div class="image-container">
                 <img src="images/IMG_20190829_183454.jpg" alt="profile photo">
             </div>
         </div>
+    </section>
 
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/manqoba-sbonelo-mlangeni/" target="_blank"><i class="fab fa-linkedin"><span>Linkedin</span></i></a><br>
-            <a href="https://www.facebook.com/manqoba.mlangeni.96" target="_blank"><i class="fab fa-facebook"><span>Facebook</span></i></a><br>
-            <a href="https://github.com/Manqoba-123" target="_blank"><i class="fab fa-github"><span>GitHub</span></i></a>
-        </div>
-        
+    <!-- Skills Section -->
+    <section id="skills">
         <div class="inner">
             <div class="header">
                 <h2>My Skills</h2>
@@ -50,27 +47,27 @@
             <div class="skill-container">
                 <div class="skill-box">
                     <div class="skill-title">
-                        <img src="images/icons8-html-48.png" alt="html5" class="skill-icon" >
+                        <img src="images/icons8-html-48.png" alt="HTML" class="skill-icon">
                     </div>
-                    <h3>HTML 5</h3>
+                    <h3>HTML</h3>
                 </div>
                 <div class="skill-box">
                     <div class="skill-title">
-                        <img src="images/icons8-css-100.png" alt="css" class="skill-icon">
+                        <img src="images/icons8-css-100.png" alt="CSS" class="skill-icon">
                     </div>
                     <h3>CSS</h3>
                 </div>
                 <div class="skill-box">
                     <div class="skill-title">
-                        <img src="images/icons8-python-48.png" alt="python" class="skill-icon">
+                        <img src="images/icons8-python-48.png" alt="Python" class="skill-icon">
                     </div>
-                    <h3>PYTHON</h3>
+                    <h3>Python</h3>
                 </div>
                 <div class="skill-box">
                     <div class="skill-title">
-                        <img src="images/icons8-javascript-48.png" alt="javascript" class="skill-icon">
+                        <img src="images/icons8-javascript-48.png" alt="JavaScript" class="skill-icon">
                     </div>
-                    <h3>JAVASCRIPT</h3>
+                    <h3>JavaScript</h3>
                 </div>
             </div>
         </div>
@@ -81,14 +78,18 @@
         </div>
         <div class="project-container">
             <div class="project-card">
-                <img src="images/realtor-showing-house.jpg" alt="Project 1">
-                <h3>Realtor</h3>
-                <p>It's a rent and sell Website, the project was done with the help of Html, Tailwind CSS, javascript and firebase as adatabase..</p>
+                <a href="https://react-app-rosy-nine.vercel.app/" target="_blank" class="project-card">
+                    <img src="images/realtor-showing-house.jpg" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>A brief description of the project, highlighting the tools and skills used.</p>
+                </a>
             </div>
             <div class="project-card">
+                <a href="https://github.com/Manqoba-123/html_css_vanilla-js" target="_blank" class="project-card">
                 <img src="images/J.A.R.V.I.S..jpg" alt="Project 2">
                 <h3>Jarvis</h3>
-                <p>Final year project which was done in groups with a help of C++.</p>
+                <p>Group of small projects for the practice of HTML, CSS and javascript</p>
+            </a>
             </div>
         </div>
     </section>
