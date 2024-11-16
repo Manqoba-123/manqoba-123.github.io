@@ -290,7 +290,6 @@ input {
 .project-card a {
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Ensures text uses the default color */
-    display: block; /* Ensures the anchor covers the whole card */
 }
 
 .project-card p {
@@ -391,6 +390,11 @@ input {
     .project-card {
         width: 80%;
         margin-bottom: 2rem;
+    }
+
+    .project-card a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Retain default text color */
     }
 
     /* Move socials to footer for mobile */
